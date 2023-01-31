@@ -1,0 +1,28 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="heading">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" placeholder="0" id="input-num">
+            <button id="convert-btn">Convert</button>
+        </div>
+        <div>
+            <div class="unit-design">
+                <p class="upper-text">Length (Meter/Feet)</p>
+                <p class="lower-text" id="length">0.000 <span id="input-meter">meter</span> = 0.000 <span id="output-foot">foot</span> | 0.000 <span id="input-foot">foot</span> = 0.000<span id="output-meter">meter</span></p>
+            </div>
+            <div class="unit-design">
+                <p class="upper-text">Volume (Liters/Gallons)</p>
+                <p class="lower-text" id="volume">0.000 <span id="input-liter">liter</span> = 0.000 <span id="output-gallon">gallon</span> | 0.000 <span id="input-gallon">gallon</span> = 0.000 <span id="output-liter">liter</span></p>
+            </div>
+            <div class="unit-design">
+                <p class="upper-text">Mass (Kilograms/Pounds)</p>
+                <p class="lower-text" id="mass">0.000 <span id="input-kilo">kilo</span> = 0.000 <span id="output-pound">pound</span> | 0.000 <span id="input-pound">pound</span> = 0.000 <span id="output-kilo">kilo</span></p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
