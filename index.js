@@ -4,24 +4,24 @@
 1 kilogram = 2.204 pound
 */
 
-let inputNum = document.getElementById("input-num")
-let convert = document.getElementById("convert-btn")
-let length = document.getElementById("length")
-let volume = document.getElementById("volume")
-let mass = document.getElementById("mass")
+const inputNum = document.getElementById("input-num")
+const convert = document.getElementById("convert-btn")
+const length = document.getElementById("length")
+const volume = document.getElementById("volume")
+const mass = document.getElementById("mass")
 
-let inputMeter = document.getElementById("input-meter")
-let inputFoot = document.getElementById("input-foot")
-let inputLiter = document.getElementById("input-liter")
-let inputGallon = document.getElementById("input-gallon")
-let inputKilo = document.getElementById("input-kilo")
-let inputPound = document.getElementById("input-pound")
-let outputMeter = document.getElementById("output-meter")
-let outputFoot = document.getElementById("output-foot")
-let outputLiter = document.getElementById("output-liter")
-let outputGallon = document.getElementById("output-gallon")
-let outputKilo = document.getElementById("output-kilo")
-let outputPound = document.getElementById("output-pound")
+const inputMeter = document.getElementById("input-meter")
+const inputFoot = document.getElementById("input-foot")
+const inputLiter = document.getElementById("input-liter")
+const inputGallon = document.getElementById("input-gallon")
+const inputKilo = document.getElementById("input-kilo")
+const inputPound = document.getElementById("input-pound")
+const outputMeter = document.getElementById("output-meter")
+const outputFoot = document.getElementById("output-foot")
+const outputLiter = document.getElementById("output-liter")
+const outputGallon = document.getElementById("output-gallon")
+const outputKilo = document.getElementById("output-kilo")
+const outputPound = document.getElementById("output-pound")
 
 convert.addEventListener("click", function() {
     let input = inputNum.value
@@ -93,4 +93,5 @@ convert.addEventListener("click", function() {
     length.textContent = `${input} ${inputMeter.textContent} = ${feet.toFixed(3)} ${outputFoot.textContent} | ${input} ${inputFoot.textContent} = ${meter.toFixed(3)} ${outputMeter.textContent}`
     volume.textContent = `${input} ${inputLiter.textContent} = ${gallon.toFixed(3)} ${outputGallon.textContent} | ${input} ${inputGallon.textContent} = ${liter.toFixed(3)} ${outputLiter.textContent}`
     mass.textContent = `${input} ${inputKilo.textContent} = ${pound.toFixed(3)} ${outputPound.textContent} | ${input} ${inputPound.textContent} = ${kilo.toFixed(3)} ${outputKilo.textContent}`
+    inputNum.value = 0
 })
